@@ -11,7 +11,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
 
-@Component("authenticationErrorComponent")
+@Component
 public class AuthenticationErrorComponent implements AuthenticationEntryPoint, Serializable {
 
 	private static final long serialVersionUID = 762265710958066324L;

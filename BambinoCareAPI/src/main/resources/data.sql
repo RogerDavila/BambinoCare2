@@ -2,9 +2,9 @@ INSERT INTO role(role_id,role_desc) VALUES (1,'Administrador');
 INSERT INTO role(role_id,role_desc) VALUES (2,'Bambinaia');
 INSERT INTO role(role_id,role_desc) VALUES (3,'Cliente');
 
-INSERT INTO user(user_id,email,password,role_id,enabled)VALUES(1,'roger.davila@stech.com','$2a$10$4/gq4pJ45ymHDb43HNDuU.AC8RgiE.6gQZPzMmXbMIOTwR9Shq5WC',1,true);
-INSERT INTO user(user_id,email,password,role_id,enabled)VALUES(2,'david.cruz@stech.com','$2a$10$4/gq4pJ45ymHDb43HNDuU.AC8RgiE.6gQZPzMmXbMIOTwR9Shq5WC',1,true);
-INSERT INTO user(user_id,email,password,role_id,enabled)VALUES(3,'rog.davila94@gmail.com','$2a$10$4/gq4pJ45ymHDb43HNDuU.AC8RgiE.6gQZPzMmXbMIOTwR9Shq5WC',1,true);
+INSERT INTO user(user_id,email,password,role_id,enabled)VALUES(1,'roger.davila@stech.com','{bcrypt}$2a$10$JXuoWxyuYxWJorgZiXTgk.RdnGXZ6r6aaAxtzbfHpx0Y4184FNeUm',1,true);
+INSERT INTO user(user_id,email,password,role_id,enabled)VALUES(2,'david.cruz@stech.com','{bcrypt}$2a$10$JXuoWxyuYxWJorgZiXTgk.RdnGXZ6r6aaAxtzbfHpx0Y4184FNeUm',1,true);
+INSERT INTO user(user_id,email,password,role_id,enabled)VALUES(3,'rog.davila94@gmail.com','{bcrypt}$2a$10$JXuoWxyuYxWJorgZiXTgk.RdnGXZ6r6aaAxtzbfHpx0Y4184FNeUm',1,true);
 
 
 INSERT INTO booking_type (booking_type_id, booking_type_desc) VALUES (1, 'Bambino Care');

@@ -38,6 +38,11 @@ public class User {
 
 	public User() {
 	}
+	
+	public User(String email, String password) {
+		this.email = email;
+		this.password = password;
+	}
 
 	public User(Integer userId, String email, String password, String passwordConfirm, Role role,
 			boolean enabled) {
