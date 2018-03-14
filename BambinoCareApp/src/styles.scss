@@ -2,3 +2,17 @@
 .bambino-purple {
 	background-color: rgb(179,136,255);
 }
+.carousel{
+	height: 100%;
+}
+.carousel-inner{
+	height: 100%;
+}
+.carousel-item {
+  height: 100%;
+  img {
+    size: landscape !important;
+    height: 100%;
+    overflow: hidden;
+  }
+}

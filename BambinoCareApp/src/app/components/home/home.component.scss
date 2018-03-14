@@ -1,15 +1,23 @@
 .img-logo {
-	max-width: 10em;
+  width: 10em;
 }
-#carousel, .carousel-inner, .carousel-item {
-	height: 100%;
+.carousel-caption{
+    height: 20%;
+    margin: auto;
+    position: absolute;
+    top: 1em;
+    left: 0;
+    bottom: 1em;
+    right: 0;
+    color: white;
 }
-/* <img class="d-block w-100"
-						src="../../assets/images/photos/photo3.jpg"
-						alt="Third slide">
-					<div class="mask rgba-black-slight"></div> */
-.carousel-item img {
-	size: landscape !important;
-	height: 100%;
-	overflow: hidden;
+.title {
+	color: black;
+	font-weight: bold;
+}
+.view {
+	width: 100%;
+}
+.separator {
+	height: 1em;
 }

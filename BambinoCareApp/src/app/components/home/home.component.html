@@ -1,100 +1,95 @@
 <header>
-	<nav
-		class="navbar fixed-top navbar-expand-lg navbar-dark bambino-purple scrolling-navbar">
-		<button class="navbar-toggler" type="button" data-toggle="collapse"
-			data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false"
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<a href="#" class="navbar-brand"><img
-				src="../../assets/images/logo.png" alt="BambinoCare"
-				class="img-logo" /></a>
+	<mdb-navbar
+		SideClass="navbar fixed-top navbar-expand-lg navbar-dark bambino-purple scrolling-navbar">
+		<links> 
+			<a href="#" class="navbar-brand">
+				<img src="../../assets/images/logo.png" alt="BambinoCare" class="img-logo" />
+			</a>
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-				<li class="nav-item"><a href="#" class="nav-link">Servicios</a>
-				</li>
-				<li class="nav-item"><a href="#" class="nav-link">Nosotros</a>
-				</li>
-				<li class="nav-item"><a href="#" class="nav-link">Contacto</a>
-				</li>
-				<li class="nav-item"><a href="#" class="nav-link">Registrarse</a>
-				</li>
-				<li class="nav-item"><a href="#" class="nav-link">Iniciar
-						Sesión</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Servicios</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Registrarse</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">IniciarSesión</a></li>
 			</ul>
-		</div>
-	</nav>
-	<!-- <div class="view intro-2">
-		<div class="full-bg-img">
-			<div class="mask rgba-black-strong flex-center">
+		</links> 
+	</mdb-navbar>
+	<mdb-carousel [isControls]="true" [animation]="'slide'" class="index-carousel"> 
+		<mdb-slide>
+			<div class="view hm-white-light">
+				<img class="d-block w-100" src="../../assets/images/photos/photo1.jpg" alt="photo 1">
+				<div class="mask waves-light" mdbRippleRadius></div>
+			</div>
+			<div class="carousel-caption">
 				<div class="container">
-					<div class="container black-text text-center wow fadeInUp">
-						<h1>Bienvenido a Bambino Care</h1>
-						<button>Nuestros Servicios</button>
-						<button>Iniciar Sesión</button>
+					<div class="row justify-content-center">
+						<div class="col">
+							<h1 class="title">{{ title }}</h1>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-5">
+							<button class="btn btn-black btn-lg btn-block"><span class="d-none d-sm-inline-block">Nuestros</span> Servicios</button>
+						</div>
+						<div class="w-100 separator d-block d-md-none"></div>
+						<div class="col-12 col-md-5">
+							<button class="btn btn-black btn-lg btn-block">{{ loginButtonStr }}</button>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div> -->
-	<div #carousel id="carousel" class="carousel slide carousel-fade"
-		data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#carousel" data-slide-to="0"
-				class="active"></li>
-			<li data-target="#carousel" data-slide-to="1"></li>
-			<li data-target="#carousel" data-slide-to="2"></li>
-		</ol>
-		<div class="carousel-inner" role="listbox">
-			<div class="carousel-item active">
-				<div class="view">
-					<img class="d-block w-100"
-						src="../../assets/images/photos/photo1.jpg"
-						alt="First slide">
-					<div class="mask rgba-white-light"></div>
-				</div>
-				<div class="carousel-caption black-text">
-					<h3 class="h3-responsive">Light mask</h3>
-					<p>First text</p>
+		</mdb-slide>
+		<mdb-slide>
+			<div class="view hm-white-light">
+				<img class="d-block w-100" src="../../assets/images/photos/photo2.jpg" alt="photo 2">
+				<div class="mask waves-light" mdbRippleRadius></div>
+			</div>
+			<div class="carousel-caption">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col">
+							<h1 class="title">{{ title }}</h1>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-5">
+							<button class="btn btn-black btn-lg btn-block"><span class="d-none d-sm-inline-block">Nuestros</span> Servicios</button>
+						</div>
+						<div class="w-100 separator d-block d-md-none"></div>
+						<div class="col-12 col-md-5">
+							<button class="btn btn-black btn-lg btn-block">{{ loginButtonStr }}</button>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="carousel-item">
-				<!--Mask color-->
-				<div class="view">
-					<img class="d-block w-100"
-						src="../../assets/images/photos/photo2.jpg"
-						alt="Second slide">
-					<div class="mask rgba-white-light"></div>
-				</div>
-				<div class="carousel-caption">
-					<h3 class="h3-responsive">Strong mask</h3>
-					<p>Secondary text</p>
+		</mdb-slide>
+		<mdb-slide>
+			<div class="view hm-white-light">
+				<img class="d-block w-100" src="../../assets/images/photos/photo3.jpg" alt="photo 3">
+				<div class="mask waves-light" mdbRippleRadius></div>
+			</div>
+			<div class="carousel-caption">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col">
+							<h1 class="title">{{ title }}</h1>
+						</div>
+					</div>
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-5">
+							<button class="btn btn-black btn-lg btn-block"><span class="d-none d-sm-inline-block">Nuestros</span> Servicios</button>
+						</div>
+						<div class="w-100 separator d-block d-md-none"></div>
+						<div class="col-12 col-md-5">
+							<button class="btn btn-black btn-lg btn-block">{{ loginButtonStr }}</button>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="carousel-item">
-				<!--Mask color-->
-				<div class="view">
-					<img class="d-block w-100"
-						src="../../assets/images/photos/photo3.jpg"
-						alt="Third slide">
-					<div class="mask rgba-black-slight"></div>
-				</div>
-				<div class="carousel-caption">
-					<h3 class="h3-responsive">Slight mask</h3>
-					<p>Third text</p>
-				</div>
-			</div>
-		</div>
-		<a class="carousel-control-prev" href="#carousel"
-			role="button" data-slide="prev"> <span
-			class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-			class="sr-only">Previous</span>
-		</a> <a class="carousel-control-next" href="#carousel"
-			role="button" data-slide="next"> <span
-			class="carousel-control-next-icon" aria-hidden="true"></span> <span
-			class="sr-only">Next</span>
-		</a>
-	</div>
+		</mdb-slide>
+	</mdb-carousel>
 </header>
+<div class="content">AQUI VA EL CONTENIDO</div>
+
+<footer class="footer">AQUI VA EL FOOTER</footer>
