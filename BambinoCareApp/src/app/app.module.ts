@@ -5,6 +5,7 @@ import {AppComponent} from './app.component';
 import {RouterModule, Routes} from '@angular/router';
 import {HomeComponent} from './components/home/home.component';
 import {HeaderIndexComponent} from './components/header-index/header-index.component';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 const ROUTES: Routes = [
   {path: '', component: HomeComponent},
@@ -19,7 +20,8 @@ const ROUTES: Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(ROUTES)
+    RouterModule.forRoot(ROUTES),
+    MDBBootstrapModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

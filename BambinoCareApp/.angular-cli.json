@@ -19,14 +19,15 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "../node_modules/mdbootstrap/css/bootstrap.min.css",
-        "../node_modules/mdbootstrap/css/mdb.min.css",
-        "styles.css"
+        "../node_modules/font-awesome/scss/font-awesome.scss",
+        "../node_modules/angular-bootstrap-md/scss/bootstrap/bootstrap.scss",
+        "../node_modules/angular-bootstrap-md/scss/mdb-free.scss",
+        "styles.scss"
       ],
       "scripts": [
-        "../node_modules/mdbootstrap/js/jquery-3.2.1.min.js",
-        "../node_modules/mdbootstrap/js/bootstrap.min.js",
-        "../node_modules/mdbootstrap/js/mdb.min.js"
+        "../node_modules/chart.js/dist/Chart.js",
+        "../node_modules/hammerjs/hammer.min.js",
+        "../node_modules/mdbootstrap/js/mdb.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -60,7 +61,8 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }
