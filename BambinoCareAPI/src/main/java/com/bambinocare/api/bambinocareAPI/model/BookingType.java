@@ -18,7 +18,7 @@ public class BookingType {
 
 	@Column(name = "booking_type_desc", nullable = false)
 	private String bookingTypeDesc;
-
+	
 	public BookingType(Integer bookingTypeId, String bookingTypeDesc) {
 		super();
 		this.bookingTypeId = bookingTypeId;
@@ -43,5 +43,4 @@ public class BookingType {
 	public void setBookingTypeDesc(String bookingTypeDesc) {
 		this.bookingTypeDesc = bookingTypeDesc;
 	}
-
 }
