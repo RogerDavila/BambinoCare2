@@ -7,17 +7,23 @@ import {HomeComponent} from './components/home/home.component';
 import {HeaderIndexComponent} from './components/header-index/header-index.component';
 
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const ROUTES: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'home', component: HomeComponent}
+  {path: 'home', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'signup', component: SignupComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderIndexComponent
+    HeaderIndexComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
